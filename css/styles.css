@@ -26,7 +26,7 @@ button {
 }
 img {
   display: block;
-  min-width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -199,28 +199,22 @@ body {
     color: #404bbf;
   }
 
-  .adress-list {
+  .adress-list-wrap {
     display: flex;
-    font-family: "Roboto", sans-serif;
+
     font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
+
     align-items: center;
   }
-  .adress-list-item {
+  .adress-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding: 16px 0;
+    gap: 24px;
   }
 
   .adress-link {
-    font-style: normal;
-    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
@@ -253,7 +247,7 @@ body {
 /* ======== Hero section styles ======== */
 
 .hero-section {
-  max-width: 320px;
+  max-width: 1440px;
   background: #2e2f42;
   padding: 72px 0;
   margin-right: auto;
@@ -327,24 +321,23 @@ body {
       ),
       url(../images/background_img/hero_tablet_1x.jpg);
   }
+  .hero-name {
+    max-width: 496px;
+    font-size: 56px;
+    line-height: 1.1;
+    margin-bottom: 36px;
+  }
+}
 
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 288dpi) {
-    .hero-section {
-      background-image: linear-gradient(
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url(../images/background_img/hero_tablet_2x.jpg);
-    }
-
-    .hero-name {
-      max-width: 496px;
-      font-size: 56px;
-      line-height: 1.1;
-      margin-bottom: 36px;
-    }
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 288dpi) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background_img/hero_tablet_2x.jpg);
   }
 }
 
@@ -358,20 +351,20 @@ body {
       ),
       url(../images/background_img/hero_desktop_1x.jpg);
   }
+  .hero-name {
+    margin-bottom: 48px;
+  }
+}
 
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 288dpi) {
-    .hero-section {
-      background-image: linear-gradient(
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url(../images/background_img/hero_desktop_2x.jpg);
-    }
-    .hero-name {
-      margin-bottom: 48px;
-    }
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 288dpi) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background_img/hero_desktop_2x.jpg);
   }
 }
 
@@ -404,16 +397,6 @@ body {
 .benefits-icon-container {
   display: none;
 }
-
-/* .benefits-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  margin-bottom: 8px;
-  text-align: center;
-} */
 
 .benefits-info {
   font-weight: 500;
@@ -509,8 +492,6 @@ body {
 }
 
 .team-position {
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
@@ -608,8 +589,6 @@ body {
 }
 
 .portfolio-picture-info {
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
@@ -627,8 +606,6 @@ body {
   height: 100%;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   padding: 40px 32px;
@@ -706,8 +683,6 @@ body {
 }
 
 .footer-list {
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
@@ -874,6 +849,7 @@ body {
   visibility: hidden;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: auto;
 }
 .backdrop.is-open {
   opacity: 1;
