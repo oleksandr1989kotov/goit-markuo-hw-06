@@ -160,8 +160,8 @@
 
       <!-- ======== Team section ======== -->
 
-      <!-- <section class="team">
-        <div class="container">
+      <section class="team">
+        <div class="container team-container">
           <h2 class="section-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-list-item">
@@ -421,13 +421,13 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- ========/ Team section ======== -->
 
       <!-- ======== Portfolio section ======== -->
 
-      <!-- <section class="portfolio">
+      <section class="portfolio">
         <div class="container">
           <h2 class="section-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -560,14 +560,14 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- ========/ Portfolio section ======== -->
     </main>
 
     <!-- ======== page footer ======== -->
 
-    <!-- <footer class="page-footer">
+    <footer class="page-footer">
       <div class="container footer-container">
         <div class="page-footer-container">
           <a class="footer-logo" href="./index.html"
@@ -634,8 +634,6 @@
           </ul>
         </div>
 
-      
-
         <div class="footer-submit">
           <p class="footer-submit-text">Subscribe</p>
 
@@ -657,13 +655,13 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- ========/ page footer ======= -->
 
     <!-- ======== Backdrop ======== -->
 
-    <!-- <div class="backdrop">
+    <div class="backdrop">
       <div class="modal">
         <button class="modal-button" type="button">
           <svg
@@ -768,7 +766,7 @@
           <button class="review-form-submit-button" type="submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
 
     <div class="mobile-menu">
       <div class="container mobile-menu-container">
@@ -783,83 +781,86 @@
           </svg>
         </button>
 
-        <div class="mobile-nav-menu-wrapper">
-          <ul class="mobile-nav-menu">
-            <li><a href="Studio">Studio</a></li>
-            <li><a href="Portfolio">Portfolio</a></li>
-            <li><a href="Contacts">Contacts</a></li>
+        <nav class="mobile-nav-menu">
+          <ul class="mobile-nav-menu-list">
+            <li class="mobile-nav-menu-item">
+              <a class="mobile-nav-link blue" href="">Studio</a>
+            </li>
+            <li class="mobile-nav-menu-item">
+              <a class="mobile-nav-link" href="">Portfolio</a>
+            </li>
+            <li class="mobile-nav-menu-item">
+              <a class="mobile-nav-link" href="">Contacts</a>
+            </li>
           </ul>
+        </nav>
 
-          <div class="mobile-address-wrapper">
-            <address class="mobile-adress-list">
-              <ul class="mobile-adress-list-item">
-                <li>
-                  <a class="mobile-adress-link" href="tel:+110001111111">
-                    +11 (000) 111-11-11</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="mobile-adress-link"
-                    href="mailto:info@devstudio.com"
-                  >
-                    info@devstudio.com</a
-                  >
-                </li>
-              </ul>
-            </address>
+        <address class="mobile-menu-address">
+          <ul class="mobile-address-list-item">
+            <li>
+              <a class="mobile-address-link phone" href="tel:+110001111111">
+                +11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a class="mobile-address-link" href="mailto:info@devstudio.com">
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
 
-            <ul class="social-list mobile-social-list">
-              <li class="social-list-item">
-                <a href="" class="social-list-link mobile-social-list-link">
-                  <svg
-                    class="social-list-icon"
-                    width="24"
-                    height="24"
-                    aria-label="instagram icon"
-                  >
-                    <use href="./images/icons.svg#icon-instagram_svg"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-list-item">
-                <a href="" class="social-list-link mobile-social-list-link">
-                  <svg
-                    class="social-list-icon"
-                    width="24"
-                    height="24"
-                    aria-label="twitter icon"
-                  >
-                    <use href="./images/icons.svg#icon-twitter_svg"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-list-item">
-                <a href="" class="social-list-link mobile-social-list-link">
-                  <svg
-                    class="social-list-icon"
-                    width="24"
-                    height="24"
-                    aria-label="facebook icon"
-                  >
-                    <use href="./images/icons.svg#icon-facebook_svg"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-list-item">
-                <a href="" class="social-list-link mobile-social-list-link">
-                  <svg
-                    class="social-list-icon"
-                    width="24"
-                    height="24"
-                    aria-label="linkedin icon"
-                  >
-                    <use href="./images/icons.svg#icon-linkedin_svg"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
+        <div class="mobile-social-list-wrapper">
+          <ul class="social-list mobile-social-list">
+            <li class="mobile-social-list-item">
+              <a href="#" class="social-list-link mobile-social-list-link">
+                <svg
+                  class="social-list-icon"
+                  width="24"
+                  height="24"
+                  aria-label="instagram icon"
+                >
+                  <use href="./images/icons.svg#icon-instagram_svg"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-list-item">
+              <a href="#" class="social-list-link mobile-social-list-link">
+                <svg
+                  class="social-list-icon"
+                  width="24"
+                  height="24"
+                  aria-label="twitter icon"
+                >
+                  <use href="./images/icons.svg#icon-twitter_svg"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-list-item">
+              <a href="#" class="social-list-link mobile-social-list-link">
+                <svg
+                  class="social-list-icon"
+                  width="24"
+                  height="24"
+                  aria-label="facebook icon"
+                >
+                  <use href="./images/icons.svg#icon-facebook_svg"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-list-item">
+              <a href="#" class="social-list-link mobile-social-list-link">
+                <svg
+                  class="social-list-icon"
+                  width="24"
+                  height="24"
+                  aria-label="linkedin icon"
+                >
+                  <use href="./images/icons.svg#icon-linkedin_svg"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
