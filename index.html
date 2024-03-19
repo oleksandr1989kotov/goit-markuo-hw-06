@@ -69,23 +69,23 @@
 
     <main>
       <!-- ======== Hero section ======== -->
-      <!-- <section class="title-section">
+      <section class="hero-section">
         <div class="container hero-container">
-          <h1 class="title-name">Effective Solutions for Your Business</h1>
-          <button class="title-button" type="button">Order Service</button>
+          <h1 class="hero-name">Effective Solutions for Your Business</h1>
+          <button class="hero-button" type="button">Order Service</button>
         </div>
-      </section> -->
+      </section>
 
       <!-- ========/ Hero section ======== -->
 
       <!-- ======== Benefits section ======== -->
 
-      <!-- <section class="benefits">
+      <section class="benefits">
         <div class="container">
           <h2 class="section-title visually-hidden">Our benefits</h2>
 
-          <ul class="benefits-icon-list">
-            <li>
+          <ul class="benefits-list">
+            <li class="benefits-list-item">
               <div class="benefits-icon-container">
                 <svg
                   width="64"
@@ -96,8 +96,13 @@
                   <use href="./images/icons.svg#icon-antenna_svg"></use>
                 </svg>
               </div>
+              <h3 class="benefits-title">Strategy</h3>
+              <p class="benefits-info">
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
+              </p>
             </li>
-            <li>
+            <li class="benefits-list-item">
               <div class="benefits-icon-container">
                 <svg
                   width="64"
@@ -108,8 +113,13 @@
                   <use href="./images/icons.svg#icon-astronaut_svg"></use>
                 </svg>
               </div>
+              <h3 class="benefits-title">Punctuality</h3>
+              <p class="benefits-info">
+                Bring the key message to the brand's audience for the best price
+                within the shortest possible time.
+              </p>
             </li>
-            <li>
+            <li class="benefits-list-item">
               <div class="benefits-icon-container">
                 <svg
                   width="64"
@@ -120,8 +130,13 @@
                   <use href="./images/icons.svg#icon-clock_svg"></use>
                 </svg>
               </div>
+              <h3 class="benefits-title">Diligence</h3>
+              <p class="benefits-info">
+                Research and confirm brands that present the strongest digital
+                growth opportunities and minimize risk.
+              </p>
             </li>
-            <li>
+            <li class="benefits-list-item">
               <div class="benefits-icon-container">
                 <svg
                   width="64"
@@ -132,33 +147,7 @@
                   <use href="./images/icons.svg#icon-diagram_svg"></use>
                 </svg>
               </div>
-            </li>
-          </ul>
-
-          <ul class="benefits-list">
-            <li class="benefits-list-item">
-              <h3 class="benefits-type">Strategy</h3>
-              <p class="benefits-info">
-                Our goal is to identify the business problem to walk away with
-                the perfect and creative solution.
-              </p>
-            </li>
-            <li class="benefits-list-item">
-              <h3 class="benefits-type">Punctuality</h3>
-              <p class="benefits-info">
-                Bring the key message to the brand's audience for the best price
-                within the shortest possible time.
-              </p>
-            </li>
-            <li class="benefits-list-item">
-              <h3 class="benefits-type">Diligence</h3>
-              <p class="benefits-info">
-                Research and confirm brands that present the strongest digital
-                growth opportunities and minimize risk.
-              </p>
-            </li>
-            <li class="benefits-list-item">
-              <h3 class="benefits-type">Technologies</h3>
+              <h3 class="benefits-title">Technologies</h3>
               <p class="benefits-info">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
@@ -166,7 +155,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- ========/ Benefits section ======== -->
 
       <!-- ======== Team section ======== -->
@@ -793,62 +782,85 @@
             <use href="./images/icons.svg#icon-modal-close_svg"></use>
           </svg>
         </button>
-        <ul class="mobile-nav-menu">
-          <li><a href="Studio">Studio</a></li>
-          <li><a href="Portfolio">Portfolio</a></li>
-          <li><a href="Contacts">Contacts</a></li>
-        </ul>
 
-        <ul class="social-list mobile-social-list">
-          <li class="social-list-item">
-            <a href="" class="social-list-link mobile-social-list-link">
-              <svg
-                class="social-list-icon"
-                width="24"
-                height="24"
-                aria-label="instagram icon"
-              >
-                <use href="./images/icons.svg#icon-instagram_svg"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list-item">
-            <a href="" class="social-list-link mobile-social-list-link">
-              <svg
-                class="social-list-icon"
-                width="24"
-                height="24"
-                aria-label="twitter icon"
-              >
-                <use href="./images/icons.svg#icon-twitter_svg"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list-item">
-            <a href="" class="social-list-link mobile-social-list-link">
-              <svg
-                class="social-list-icon"
-                width="24"
-                height="24"
-                aria-label="facebook icon"
-              >
-                <use href="./images/icons.svg#icon-facebook_svg"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list-item">
-            <a href="" class="social-list-link mobile-social-list-link">
-              <svg
-                class="social-list-icon"
-                width="24"
-                height="24"
-                aria-label="linkedin icon"
-              >
-                <use href="./images/icons.svg#icon-linkedin_svg"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <div class="mobile-nav-menu-wrapper">
+          <ul class="mobile-nav-menu">
+            <li><a href="Studio">Studio</a></li>
+            <li><a href="Portfolio">Portfolio</a></li>
+            <li><a href="Contacts">Contacts</a></li>
+          </ul>
+
+          <div class="mobile-address-wrapper">
+            <address class="mobile-adress-list">
+              <ul class="mobile-adress-list-item">
+                <li>
+                  <a class="mobile-adress-link" href="tel:+110001111111">
+                    +11 (000) 111-11-11</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mobile-adress-link"
+                    href="mailto:info@devstudio.com"
+                  >
+                    info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+
+            <ul class="social-list mobile-social-list">
+              <li class="social-list-item">
+                <a href="" class="social-list-link mobile-social-list-link">
+                  <svg
+                    class="social-list-icon"
+                    width="24"
+                    height="24"
+                    aria-label="instagram icon"
+                  >
+                    <use href="./images/icons.svg#icon-instagram_svg"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list-item">
+                <a href="" class="social-list-link mobile-social-list-link">
+                  <svg
+                    class="social-list-icon"
+                    width="24"
+                    height="24"
+                    aria-label="twitter icon"
+                  >
+                    <use href="./images/icons.svg#icon-twitter_svg"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list-item">
+                <a href="" class="social-list-link mobile-social-list-link">
+                  <svg
+                    class="social-list-icon"
+                    width="24"
+                    height="24"
+                    aria-label="facebook icon"
+                  >
+                    <use href="./images/icons.svg#icon-facebook_svg"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list-item">
+                <a href="" class="social-list-link mobile-social-list-link">
+                  <svg
+                    class="social-list-icon"
+                    width="24"
+                    height="24"
+                    aria-label="linkedin icon"
+                  >
+                    <use href="./images/icons.svg#icon-linkedin_svg"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </body>
